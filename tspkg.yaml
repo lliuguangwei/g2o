@@ -1,0 +1,22 @@
+name: g2o-map
+version: __from_changelog__
+maintainer: Guangwei Liu <guangwei.liu@tusimple.ai>
+
+deps:
+  # calibration_manager: '>=3.0.7'
+  # pcl: any
+  # opencv: any
+  # yaml-cpp: any
+  # transformation-util2: '>=1.4.2' 
+
+extra_deps:
+  apt: cmake libeigen3-dev libsuitesparse-dev libqt4-dev qt4-qmake libqglviewer-dev
+
+build: |
+  [[ -n $CLEANUP ]] && rm -r build
+  mkdir -p build
+  cd build
+  cmake ..
+  make -j
+  install ../bin bin
+  install ../lib lib
