@@ -1,0 +1,16 @@
+build_info:
+  date: 2020-09-01 11:16:26.058746
+  host: lgw
+  user: lgw
+  versions: {}
+extra_deps:
+  apt: cmake libeigen3-dev libsuitesparse-dev libqt4-dev qt4-qmake libqglviewer-dev
+maintainer: Guangwei Liu <guangwei.liu@tusimple.ai>
+name: g2o-map
+source:
+  branch: master
+  commit: b224314763c9cb72277e3a246501bfcb68b91d45
+  dirty: true
+  path: .
+  url: https://github.com/lliuguangwei/g2o.git
+version: 1.1.0
