@@ -12,4 +12,4 @@ build: |
   rm -r *
   cmake ..
   make -j
-  sudo make install
+  make install
