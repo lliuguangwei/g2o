@@ -11,5 +11,5 @@ build: |
   cd build
   rm -r *
   cmake ..
-  make -j
+  make -j2
   make install
