@@ -13,3 +13,5 @@ build: |
   cmake ..
   make -j2
   sudo make install
+  install ../bin bin
+  install ../lib lib
